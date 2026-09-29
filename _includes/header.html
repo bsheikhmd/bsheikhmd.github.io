@@ -1,0 +1,11 @@
+<header class="site-header" role="banner">
+  <div class="wrapper">
+    {%- if page.lang == "es" -%}{%- assign home = "/es/" -%}{%- assign sub = "cirujano ortopédico jubilado" -%}{%- assign other = "English" -%}{%- else -%}{%- assign home = "/" -%}{%- assign sub = "retired orthopedic surgeon" -%}{%- assign other = "Español" -%}{%- endif %}
+    <a class="site-title" rel="author" href="{{ home | relative_url }}">{{ site.title | escape }}<span style="font-size:0.7em;color:#6b6b6b;">, {{ sub }}</span></a>
+    <nav class="site-nav">
+      <div class="trigger">
+        {%- if page.alt_url %}<a class="page-link" href="{{ page.alt_url | relative_url }}" lang="{% if page.lang == 'es' %}en{% else %}es{% endif %}">{{ other }}</a>{% endif %}
+      </div>
+    </nav>
+  </div>
+</header>

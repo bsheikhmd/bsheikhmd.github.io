@@ -1,0 +1,11 @@
+title: "Babak Sheikh, MD"
+description: "Plain answers to common orthopedic questions, based on published research."
+lang: en
+theme: minima
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+baseurl: ""
+url: ""
+exclude:
+  - README.md

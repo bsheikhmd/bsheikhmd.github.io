@@ -1,0 +1,13 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {%- seo -%}
+  {%- if page.alt_url -%}
+  {%- if page.lang == "es" -%}{%- assign en_url = page.alt_url -%}{%- assign es_url = page.url -%}{%- else -%}{%- assign en_url = page.url -%}{%- assign es_url = page.alt_url -%}{%- endif %}
+  <link rel="alternate" hreflang="en" href="{{ en_url | absolute_url }}">
+  <link rel="alternate" hreflang="es" href="{{ es_url | absolute_url }}">
+  <link rel="alternate" hreflang="x-default" href="{{ en_url | absolute_url }}">
+  {%- endif %}
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+</head>
