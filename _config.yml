@@ -9,3 +9,8 @@ baseurl: ""
 url: "https://bsheikhmd.github.io"
 exclude:
   - README.md
+defaults:
+  - scope:
+      path: "googlea92ca439cc32289c.html"
+    values:
+      sitemap: false
