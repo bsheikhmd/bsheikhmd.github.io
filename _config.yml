@@ -6,6 +6,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 baseurl: ""
-url: ""
+url: "https://bsheikhmd.github.io"
 exclude:
   - README.md
