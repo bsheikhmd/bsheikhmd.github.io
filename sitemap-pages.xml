@@ -1,0 +1,13 @@
+---
+layout: null
+sitemap: false
+permalink: /sitemap-pages.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- for p in site.pages %}
+{%- if p.layout == "page" %}
+<url><loc>{{ p.url | absolute_url | xml_escape }}</loc>{% if p.last_reviewed %}<lastmod>{{ p.last_reviewed | date: "%Y-%m-%d" }}</lastmod>{% endif %}</url>
+{%- endif %}
+{%- endfor %}
+</urlset>
